@@ -43,18 +43,18 @@ IDE: Visual Studio Code, Android Studio, atau editor teks lain yang mendukung Fl
 
 ## 2. Clone Repository
 Clone proyek ini ke komputer Anda:
-'''bash
+```bash
 git clone https://github.com/username/flutter-navigation-codelab.git
 
 cd flutter-navigation-codelab
-'''
+```
 ## 3. Jalankan Aplikasi
 Jalankan perintah berikut untuk memulai aplikasi:
-'''bash
+```bash
 flutter pub get
 
 flutter run
-'''
+```
 ## 4. Pengujian Aplikasi
 Aplikasi dimulai di First Screen.
 
@@ -111,7 +111,7 @@ Navigasi dilakukan menggunakan fungsi berikut:
 
 - Untuk pindah ke layar baru:
 ```dart
-Navigator.pushNamed(context, '/second'); // Contoh navigasi ke SecondScreen
+Navigator.pushNamed(context, '/second');
 ```
 - Untuk kembali ke layar sebelumnya:
 ```dart
