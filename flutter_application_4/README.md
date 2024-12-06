@@ -34,6 +34,7 @@ IDE: Visual Studio Code, Android Studio, atau editor teks lain yang mendukung Fl
 Clone proyek ini ke komputer Anda:
 
 git clone https://github.com/username/flutter-navigation-codelab.git
+
 cd flutter-navigation-codelab
 
 ## 3. Jalankan Aplikasi
