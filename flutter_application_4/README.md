@@ -96,7 +96,7 @@ Solusi: Menambahkan Drawer pada setiap layar dengan ListTile untuk setiap route.
 ## 1. Definisi Named Routes
 Named routes didefinisikan di main.dart menggunakan parameter routes dalam widget MaterialApp. Named routes memberikan struktur yang lebih bersih dan mudah untuk mengelola navigasi di seluruh aplikasi.
 
-'''dart
+```dart
 MaterialApp(
   initialRoute: '/',
   routes: {
@@ -105,26 +105,26 @@ MaterialApp(
     '/third': (context) => ThirdScreen(),
   },
 );
-'''
+```
 ## 2. Navigasi Antar Layar
 Navigasi dilakukan menggunakan fungsi berikut:
 
 - Untuk pindah ke layar baru:
-'''dart
+```dart
 Navigator.pushNamed(context, '/second'); // Contoh navigasi ke SecondScreen
-'''
+```
 - Untuk kembali ke layar sebelumnya:
-'''dart
+```dart
 Navigator.pop(context);
-'''
+```
 - Untuk kembali langsung ke layar pertama:
-'''dart
+```dart
 Navigator.popUntil(context, ModalRoute.withName('/'));
-'''
+```
 ## 3. Drawer untuk Navigasi Cepat
 Setiap layar dilengkapi dengan Drawer yang memungkinkan pengguna berpindah ke layar mana pun dengan cepat tanpa harus kembali ke layar sebelumnya terlebih dahulu. Drawer didefinisikan dengan widget ListTile untuk setiap layar.
 
-'''dart
+```dart
 drawer: Drawer(
   child: ListView(
     children: [
@@ -149,5 +149,5 @@ drawer: Drawer(
     ],
   ),
 ),
-'''
+```
 
