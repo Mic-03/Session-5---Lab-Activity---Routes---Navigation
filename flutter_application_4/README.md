@@ -64,6 +64,8 @@ Uji alur navigasi:
 
 First → Second → Third
 
+Second → First
+
 Third → First atau Third → Second.
 
 # Cara Menggunakan
@@ -74,9 +76,7 @@ Third → First atau Third → Second.
 
 3. Pada Third Screen, klik:
 
-    - "Go Back to First Screen" untuk kembali langsung ke layar pertama.
-
-    - "Go to Second Screen" untuk navigasi ke layar kedua.
+    - "Go to First Screen" untuk navigasi ke layar pertama.
 
 ## Navigasi Menggunakan Drawer
 1. Buka Drawer di salah satu layar.
