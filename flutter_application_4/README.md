@@ -84,11 +84,7 @@ Third → First atau Third → Second.
 2. Pilih layar yang ingin Anda navigasikan langsung.
 
 # Tantangan dan Solusi
-## 1. Pengelolaan Navigasi
-Tantangan: Mengelola navigasi kembali langsung ke layar pertama.
-Solusi: Menggunakan Navigator.popUntil(context, ModalRoute.withName('/')); untuk menghapus semua layar di atas layar pertama dari stack.
-
-## 2. Implementasi Drawer
+## 1. Implementasi Drawer
 Tantangan: Memberikan akses cepat ke semua layar.
 Solusi: Menambahkan Drawer pada setiap layar dengan ListTile untuk setiap route.
 
