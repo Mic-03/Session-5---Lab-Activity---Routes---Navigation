@@ -43,18 +43,18 @@ IDE: Visual Studio Code, Android Studio, atau editor teks lain yang mendukung Fl
 
 ## 2. Clone Repository
 Clone proyek ini ke komputer Anda:
-
+'''bash
 git clone https://github.com/username/flutter-navigation-codelab.git
 
 cd flutter-navigation-codelab
-
+'''
 ## 3. Jalankan Aplikasi
 Jalankan perintah berikut untuk memulai aplikasi:
-
+'''bash
 flutter pub get
 
 flutter run
-
+'''
 ## 4. Pengujian Aplikasi
 Aplikasi dimulai di First Screen.
 
@@ -91,4 +91,63 @@ Third → First atau Third → Second.
 Tantangan: Memberikan akses cepat ke semua layar.
 
 Solusi: Menambahkan Drawer pada setiap layar dengan ListTile untuk setiap route.
+
+# Pendekatan Kode
+## 1. Definisi Named Routes
+Named routes didefinisikan di main.dart menggunakan parameter routes dalam widget MaterialApp. Named routes memberikan struktur yang lebih bersih dan mudah untuk mengelola navigasi di seluruh aplikasi.
+
+'''dart
+MaterialApp(
+  initialRoute: '/',
+  routes: {
+    '/': (context) => FirstScreen(),
+    '/second': (context) => SecondScreen(),
+    '/third': (context) => ThirdScreen(),
+  },
+);
+'''
+## 2. Navigasi Antar Layar
+Navigasi dilakukan menggunakan fungsi berikut:
+
+- Untuk pindah ke layar baru:
+'''dart
+Navigator.pushNamed(context, '/second'); // Contoh navigasi ke SecondScreen
+'''
+- Untuk kembali ke layar sebelumnya:
+'''dart
+Navigator.pop(context);
+'''
+- Untuk kembali langsung ke layar pertama:
+'''dart
+Navigator.popUntil(context, ModalRoute.withName('/'));
+'''
+## 3. Drawer untuk Navigasi Cepat
+Setiap layar dilengkapi dengan Drawer yang memungkinkan pengguna berpindah ke layar mana pun dengan cepat tanpa harus kembali ke layar sebelumnya terlebih dahulu. Drawer didefinisikan dengan widget ListTile untuk setiap layar.
+
+'''dart
+drawer: Drawer(
+  child: ListView(
+    children: [
+      ListTile(
+        title: const Text('First Screen'),
+        onTap: () {
+          Navigator.pushNamed(context, '/');
+        },
+      ),
+      ListTile(
+        title: const Text('Second Screen'),
+        onTap: () {
+          Navigator.pushNamed(context, '/second');
+        },
+      ),
+      ListTile(
+        title: const Text('Third Screen'),
+        onTap: () {
+          Navigator.pushNamed(context, '/third');
+        },
+      ),
+    ],
+  ),
+),
+'''
 
