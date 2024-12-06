@@ -15,12 +15,6 @@ class SecondScreen extends StatelessWidget {
               },
               child: const Text('Go to Third Screen'),
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              child: const Text('Go Back to First Screen'),
-            ),
           ],
         ),
       ),

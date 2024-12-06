@@ -11,17 +11,10 @@ class ThirdScreen extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                // Navigasi kembali ke First Screen
-                Navigator.popUntil(context, ModalRoute.withName('/'));
-              },
-              child: const Text('Go Back to First Screen'),
-            ),
-            ElevatedButton(
-              onPressed: () {
                 // Navigasi ke Second Screen
-                Navigator.pushNamed(context, '/second');
+                Navigator.pushNamed(context, '/');
               },
-              child: const Text('Go to Second Screen'),
+              child: const Text('Go to First Screen'),
             ),
           ],
         ),
