@@ -11,25 +11,25 @@ Tombol untuk kembali atau berpindah ke layar lain.
 Kemampuan untuk kembali langsung ke layar pertama atau layar sebelumnya.
 
 # Daftar Layar
-First Screen:
+1. First Screen:
 
-Layar pertama dan utama aplikasi.
+    - Layar pertama dan utama aplikasi.
 
-Memiliki tombol untuk navigasi ke Second Screen.
+    - Memiliki tombol untuk navigasi ke Second Screen.
 
-Terdapat Drawer untuk akses ke semua layar.
+    - Terdapat Drawer untuk akses ke semua layar.
 
-Second Screen:
+2. Second Screen:
 
-Memiliki tombol untuk navigasi ke Third Screen.
+    - Memiliki tombol untuk navigasi ke Third Screen.
 
-Terdapat tombol back untuk kembali ke Screen sebelumnya
+    - Terdapat tombol back untuk kembali ke Screen sebelumnya
 
-Third Screen:
+3. Third Screen:
 
-Memiliki tombol untuk berpindah ke First Screen.
+    - Memiliki tombol untuk berpindah ke First Screen.
 
-Terdapat tombol back untuk kembali ke Screen sebelumnya
+    - Terdapat tombol back untuk kembali ke Screen sebelumnya
 
 # Panduan Instalasi
 Ikuti langkah-langkah berikut untuk menjalankan aplikasi:
@@ -68,17 +68,27 @@ Third → First atau Third → Second.
 
 # Cara Menggunakan
 ## Navigasi Menggunakan Tombol
-Pada First Screen, klik tombol untuk menuju ke Second Screen.
+1. Pada First Screen, klik tombol untuk menuju ke Second Screen.
 
-Pada Second Screen, klik tombol untuk menuju ke Third Screen.
+2. Pada Second Screen, klik tombol untuk menuju ke Third Screen.
 
-Pada Third Screen, klik:
+3. Pada Third Screen, klik:
 
-"Go Back to First Screen" untuk kembali langsung ke layar pertama.
+    - "Go Back to First Screen" untuk kembali langsung ke layar pertama.
 
-"Go to Second Screen" untuk navigasi ke layar kedua.
+    - "Go to Second Screen" untuk navigasi ke layar kedua.
 
 ## Navigasi Menggunakan Drawer
-Buka Drawer di salah satu layar.
+1. Buka Drawer di salah satu layar.
 
-Pilih layar yang ingin Anda navigasikan langsung.
+2. Pilih layar yang ingin Anda navigasikan langsung.
+
+# Tantangan dan Solusi
+## 1. Pengelolaan Navigasi
+Tantangan: Mengelola navigasi kembali langsung ke layar pertama.
+Solusi: Menggunakan Navigator.popUntil(context, ModalRoute.withName('/')); untuk menghapus semua layar di atas layar pertama dari stack.
+
+## 2. Implementasi Drawer
+Tantangan: Memberikan akses cepat ke semua layar.
+Solusi: Menambahkan Drawer pada setiap layar dengan ListTile untuk setiap route.
+
