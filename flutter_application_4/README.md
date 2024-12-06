@@ -1,13 +1,13 @@
-## Flutter Navigation Codelab
+# Flutter Navigation Codelab
 Proyek ini merupakan aplikasi Flutter multi-layar yang menggunakan named routes untuk navigasi antar layar. Aplikasi ini memiliki tiga layar utama (FirstScreen, SecondScreen, dan ThirdScreen) serta sebuah Drawer untuk navigasi cepat ke setiap layar.
 
-## Fitur
+# Fitur
 Navigasi antar layar menggunakan named routes.
 Drawer untuk akses mudah ke setiap layar.
 Tombol untuk kembali atau berpindah ke layar lain.
 Kemampuan untuk kembali langsung ke layar pertama atau layar sebelumnya.
 
-## Daftar Layar
+# Daftar Layar
 First Screen:
 Layar pertama dan utama aplikasi.
 Memiliki tombol untuk navigasi ke Second Screen.
@@ -21,7 +21,7 @@ Third Screen:
 Memiliki tombol untuk berpindah ke First Screen.
 Terdapat tombol back untuk kembali ke Screen sebelumnya
 
-## Panduan Instalasi
+# Panduan Instalasi
 Ikuti langkah-langkah berikut untuk menjalankan aplikasi:
 
 ## 1. Prasyarat
@@ -49,14 +49,14 @@ Uji alur navigasi:
 First → Second → Third
 Third → First atau Third → Second.
 
-## Cara Menggunakan
-# Navigasi Menggunakan Tombol
+# Cara Menggunakan
+## Navigasi Menggunakan Tombol
 Pada First Screen, klik tombol untuk menuju ke Second Screen.
 Pada Second Screen, klik tombol untuk menuju ke Third Screen.
 Pada Third Screen, klik:
 "Go Back to First Screen" untuk kembali langsung ke layar pertama.
 "Go to Second Screen" untuk navigasi ke layar kedua.
 
-# Navigasi Menggunakan Drawer
+## Navigasi Menggunakan Drawer
 Buka Drawer di salah satu layar.
 Pilih layar yang ingin Anda navigasikan langsung.
