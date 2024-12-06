@@ -72,14 +72,17 @@ Third → First atau Third → Second.
 ## Navigasi Menggunakan Tombol
 1. Pada First Screen, klik tombol untuk menuju ke Second Screen.
 
-2. Pada Second Screen, klik tombol untuk menuju ke Third Screen.
+2. Pada Second Screen, klik:
+    - tombol untuk menuju ke Third Screen.
+    - back untuk ke layar sebelumnya.
 
 3. Pada Third Screen, klik:
 
-    - "Go to First Screen" untuk navigasi ke layar pertama.
+    - tombol untuk menuju ke layar pertama.
+    - back untuk ke layar sebelumnya.
 
 ## Navigasi Menggunakan Drawer
-1. Buka Drawer di salah satu layar.
+1. Buka Drawer di layar pertama.
 
 2. Pilih layar yang ingin Anda navigasikan langsung.
 
